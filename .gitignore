@@ -39,11 +39,34 @@ vignettes/*.pdf
 # R Environment Variables
 .Renviron
 
-# pkgdown site
-docs/
 
 # translation temp files
 po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+# Données volumineuses
+data/raw/*
+data/interim/*
+data/processed/*
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+!data/processed/.gitkeep
+
+# Base DuckDB
+database/*.duckdb
+database/*.wal
+
+# Modèles entraînés
+models/*.rds
+
+# Journaux
+logs/*
+!logs/.gitkeep
+
+# Secrets
+.env
+
+# Fichiers temporaires Quarto
+.quarto/
