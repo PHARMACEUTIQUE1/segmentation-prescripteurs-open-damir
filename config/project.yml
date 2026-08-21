@@ -17,4 +17,9 @@ paths:
   outputs: "outputs"
   logs: "logs"
   
-  
+pipeline:
+  check_updates_daily: true
+  auto_detect_latest_year: true
+  update_strategy: "validate_then_replace"
+  stop_on_schema_change: true
+  keep_previous_version: true
