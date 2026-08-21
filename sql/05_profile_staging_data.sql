@@ -1,0 +1,1 @@
+SUMMARIZE staging_open_damir
