@@ -34,4 +34,5 @@ dictionary_variables <- readxl::read_excel(
     nom_variable != "")
 
 message("Dictionnaire importé : ",nrow(dictionary_variables)," variables documentées.")
+
 print(table(dictionary_variables$categorie))

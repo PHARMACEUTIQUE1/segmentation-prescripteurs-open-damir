@@ -29,8 +29,7 @@ project_paths <- list(
   database  = here::here(project_config$paths$database),
   models    = here::here(project_config$paths$models),
   outputs   = here::here(project_config$paths$outputs),
-  logs      = here::here(project_config$paths$logs)
-)
+  logs      = here::here(project_config$paths$logs))
 
 # Création automatique des dossiers manquants
 directories <- c(
@@ -40,16 +39,10 @@ directories <- c(
   fs::path_dir(project_paths$database),
   project_paths$models,
   project_paths$outputs,
-  project_paths$logs
-)
+  project_paths$logs)
 
-invisible(lapply(
-  directories,
-  fs::dir_create,
-  recurse = TRUE
-))
+invisible(lapply(directories, fs::dir_create, recurse = TRUE))
 
 # Graine aléatoire reproductible
 set.seed(project_config$project$random_seed)
-
 message("Configuration chargée : ",project_config$project$name," | Année : ",project_config$data$year)
