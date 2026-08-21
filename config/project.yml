@@ -1,0 +1,20 @@
+project:
+  name: "segmentation-prescripteurs-open-damir"
+  version: "0.1.0"
+  random_seed: 2026
+
+data:
+  source: "Open DAMIR - Assurance Maladie"
+  year: 2025
+  catalog_url: "https://open-data-assurance-maladie.ameli.fr/depenses/download.php?Dir_Rep=Open_DAMIR&Annee=2025"
+
+paths:
+  raw: "data/raw"
+  interim: "data/interim"
+  processed: "data/processed"
+  database: "database/open_damir.duckdb"
+  models: "models"
+  outputs: "outputs"
+  logs: "logs"
+  
+  
